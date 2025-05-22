@@ -1,0 +1,52 @@
+{
+  "name": "ai-agent-starter-kit",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "gen-seed": "node ./server/scripts/seed.mjs",
+    "deploy-model": "node ./server/scripts/deploy-model.mjs",
+    "login-x": "pnpm --filter server run login-x",
+    "preinstall": "npx only-allow pnpm",
+    "predev": "pnpm --filter client run predev && pnpm --filter server run predev",
+    "dev": "node scripts/dev",
+    "tunnel": "node scripts/tunnel",
+    "dev:client": "pnpm --filter client run dev",
+    "dev:server": "pnpm --filter server run dev",
+    "dev:lit-actions": "pnpm --filter lit-actions run watch",
+    "build": "pnpm -r run build",
+    "start": "pnpm -r run start",
+    "lint": "pnpm -r run lint",
+    "letsgo": "pnpm i && pnpm run dev",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "release": "standard-version",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6",
+    "auto-changelog": "^2.4.0",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "husky": "^9.1.7",
+    "rimraf": "^5.0.5",
+    "standard-version": "^9.5.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Abridged, Inc.",
+  "license": "MIT",
+  "packageManager": "pnpm@9.14.1",
+  "dependencies": {
+    "@meteora-ag/dlmm": "^1.3.11",
+    "bn.js": "^5.2.1",
+    "@0xsquid/sdk": "^2.9.0",
+    "@privy-io/react-auth": "^2.2.1",
+    "@solana/spl-token": "^0.4.12",
+    "@solana/web3.js": "^1.98.0",
+    "@wormhole-foundation/sdk": "^1.5.2",
+    "@wormhole-foundation/sdk-evm": "^1.5.2",
+    "@wormhole-foundation/sdk-solana": "^1.5.2",
+    "alchemy-sdk": "^3.5.2",
+    "ethers": "^6.13.5"
+  }
+}
