@@ -198,32 +198,32 @@ function Home() {
   return (
     <div className="w-full h-full bg-black"> 
 
-      {/* <Navbar className="top-2" login={login} logout={logout} authenticated={authenticated} user={user} /> */}
-      <WavyBackground className="w-full min-h-screen relative">
+      <Navbar className="top-2" login={login} logout={logout} authenticated={authenticated} user={user} />
       
-      <div className="flex flex-col items-center w-full space-y-12 p-0 transform -translate-y-1/3">
-      <h1 className={`text-3xl md:text-5xl lg:text-9xl font-bold text-center gradient-text ${myFont.className}`}>
-        SPACE COIN
-      </h1>
-      <h2 className={`text-3xl md:text-5xl lg:text-2xl font-bold text-center text-white ${myFont2.className}`}>
-        Makes Memecoins accessible across chains!
-      </h2>
-          
-          {!authenticated ? (
-            <>
-              <p className={`text-base md:text-lg mt-8 text-white font-normal inter-var text-center ${myFont2.className}`}> 
-                Connect your wallet to get started.
-              </p>
-              {/* <div className="max-w-7xl mx-auto px-4 mt-32 pb-40"> 
-                <HoverEffect items={projects} />
-              </div> */}
-            </>
-          ) : (
-            <p className="text-white text-lg gradient-text">
-              Connected as {user?.wallet?.address}
-            </p>
+      {/* MemeChain text above the wavy background */}
+      <div className="flex flex-col items-center w-full space-y-8 -mt-10 px-4 relative z-10">
+        <h1 className={`text-3xl md:text-5xl lg:text-9xl font-bold text-center gradient-text ${myFont.className}`}>
+          MemeChain
+        </h1>
+        <h2 className={`text-3xl md:text-5xl lg:text-2xl font-bold text-center text-white ${myFont2.className}`}>
+          Makes Memecoins accessible across chains!
+        </h2>
             
-          )}
+        {!authenticated ? (
+          <>
+            <p className={`text-base md:text-lg mt-8 text-white font-normal inter-var text-center ${myFont2.className}`}> 
+              Connect your wallet to get started.
+            </p>
+          </>
+        ) : (
+          <p className="text-white text-lg gradient-text">
+            Connected as {user?.wallet?.address}
+          </p>
+        )}
+      </div>
+
+      <WavyBackground className="w-full min-h-screen relative">
+        <div className="flex flex-col items-center w-full space-y-8 pt-20 px-4">
           <CardHoverEffectDemo />
         </div>
         

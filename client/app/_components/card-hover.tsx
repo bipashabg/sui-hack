@@ -17,7 +17,7 @@ export const projects = [
   {
     title: "Cross Chain Bridging",
     description:
-      "Allows user on Arbitrum to buy Solana memecoins directly with USDC/USDT.",
+      "Allows user on SUI to buy Solana memecoins directly with USDC/USDT.",
     link: "",
   },
   {

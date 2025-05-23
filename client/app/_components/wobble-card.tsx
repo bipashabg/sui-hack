@@ -31,7 +31,7 @@ export function WobbleCardDemo() {
         Cross-Chain Trading Without Hassle
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-        Most memecoins launch on Solana, but users from other chains face a tedious onboarding process—setting up a Solana-compatible wallet, funding it with SOL, and executing trades. Our solution instantly launches a mirrored token on Arbitrum, allowing users to place buy/sell orders without needing direct access to Solana.
+        Most memecoins launch on Solana, but users from other chains face a tedious onboarding process—setting up a Solana-compatible wallet, funding it with SOL, and executing trades. Our solution instantly launches a mirrored token on SUI, allowing users to place buy/sell orders without needing direct access to Solana.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
@@ -40,7 +40,7 @@ export function WobbleCardDemo() {
           Automated Liquidity & Instant Trading
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          When our AI detects a new memecoin launch on Solana, we automatically create a corresponding token on Arbitrum pegged to the original. This enables traders from other chains to participate in the hype immediately, without manually bridging assets or switching networks.
+          When our AI detects a new memecoin launch on Solana, we automatically create a corresponding token on SUI pegged to the original. This enables traders from other chains to participate in the hype immediately, without manually bridging assets or switching networks.
 
           </p>
         </div>

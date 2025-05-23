@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 class RaydiumSwap {
     constructor(RPC_URL, WALLET_PRIVATE_KEY) {
-        this.connection = new Connection(RPC_URL, { commitment: 'confirmed' });
+        this.connection = new Connection('https://solana-mainnet.g.alchemy.com/v2/rXoYtmWuCPzwBNl-sdq02', { commitment: 'confirmed' });
         this.wallet = new Wallet(Keypair.fromSecretKey(Uint8Array.from(bs58.decode(WALLET_PRIVATE_KEY))));
     }
     async loadPoolKeys(liquidityFile) {
