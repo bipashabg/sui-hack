@@ -78,7 +78,7 @@ const CryptoDashboard = () => {
           coin: 'BONK',
           amount: '78005.7513',
           price: '$0.000001283',
-          total: '0.1 SOL',
+          total: '0.1 SUI',
           timestamp: new Date().toISOString(),
           status: 'completed'
         }

@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mysten/dapp-kit": "^0.16.5",
     "@mysten/sui.js": "^0.54.1",
     "@next/font": "^14.2.15",
     "@nextui-org/react": "^2.6.8",
