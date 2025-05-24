@@ -4,6 +4,7 @@
     "module": "NodeNext",
     "lib": ["es2017", "esnext.asynciterable","dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
+    "strict": false,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",

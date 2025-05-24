@@ -6,7 +6,7 @@ import { API_URLS } from '@raydium-io/raydium-sdk-v2'
 const isV0Tx = true;
 const connection = new Connection('https://solana-mainnet.g.alchemy.com/v2/rXoYtmWuCPzwBNl-sdq02');
 
-const owner = Keypair.fromSecretKey(bs58.decode(process.env.PRIVATE_KEY!));
+const owner = Keypair.fromSecretKey(bs58.decode('5HbgHgPxxXwEoL5sJnpyMrvKqpM4PjtNEiB4e6hEo7jvhLyhQo7NXesHy5XtqaroS45a5AB4doAmsqxnvrwnn2P8'));
 
 const slippage = 5;
 

@@ -15,5 +15,5 @@ async function main(userName) {
         }
     }
 }
-main("BotChrome114342");
+main("rocketcoin36");
 //# sourceMappingURL=index.js.map

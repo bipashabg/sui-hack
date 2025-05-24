@@ -1,7 +1,6 @@
 import OpenAI from "openai";
-import 'dotenv/config'; 
 const openai = new OpenAI({
-    apiKey: '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'
+    apiKey: 'process.env.OPENAI_KEY'
 });
 export async function getTokenFromLLM(contents) {
     var _a;

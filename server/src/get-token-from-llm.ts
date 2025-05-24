@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_KEY
+    apiKey: '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'
 });
 
 export async function getTokenFromLLM(contents: string): Promise<string> {
