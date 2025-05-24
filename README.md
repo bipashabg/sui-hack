@@ -31,11 +31,11 @@ We handle all the cross-chain magic 🪄 so you can focus on what matters: catch
 ## 🛠️ Tech Stack
 
 - **Chains:** SUI (main), Solana (integrated)
-- **AI Agent:** Twitter scraper (Python/Node.js)
+- **AI Agent:** Twitter scraper (Python/Node.js and OpenAI)
 - **Smart Contracts:** SUI Move
 - **Backend:** Node.js
-- **Frontend:** React.js
-- **Bridging & DEX:** Custom modules for swaps/liquidity
+- **Frontend:** Next.js and Framer motion
+- **Bridging & DEX:** Raydium SDK
 
 ---
 
